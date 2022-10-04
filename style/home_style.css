@@ -8,6 +8,8 @@ body {
 }
 
 #header {
+    /* position: sticky; */
+    top: 0px;
     background-color: #ffdddd;
     width: 100%;
     height: 80px;
@@ -74,27 +76,40 @@ div.navbar_item {
     /* position: absolute; */
     background-image: url("../../img/maxresdefault.jpg");
     background-size: 100% auto;
-    background-position: center center;
-    opacity: 0.5;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
     width: 100%;
     height: 700px;
 }
 
+.container-bg-filter {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
 .container-child {
-    position: relative;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .container-child-title {
+    position: relative;
+    top: 25%;
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 50px;
     font-weight: bold;
-    opacity: 1;
+}
+
+.container-child-description {
+    position: relative;
+    top: 30%;
+    text-align: center;
 }
 
 /* .container {
