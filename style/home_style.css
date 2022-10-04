@@ -84,8 +84,8 @@ div.navbar_item {
 }
 
 .container {
-    /* width: 100%;
-    height: 700px; */
+    width: 100%;
+    height: 2000px;
 }
 
 .container-bg {
@@ -128,6 +128,45 @@ div.navbar_item {
     text-align: center;
     font-size: 2rem;
     /* font-weight: bold; */
+}
+
+.container-child-search-box {
+    position: relative;
+    top: 40vh;
+    width: 450px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+.container-child-search-box input {
+    border: 1px solid #a1a1a1;
+    border-radius: 50px;
+    width: 100%;
+    height: 120%;
+    padding-left: 45px;
+}
+
+.container-child-search-box input:focus {
+    outline: none;
+    box-shadow: 0 0 2px #000000;
+}
+
+.container-child-search-box input:enabled {
+    color: #535353;
+    font-weight: bold;
+}
+
+.container-child-search-box input:disabled {
+    color: #000000;
+}
+
+.container-child-search-box img {
+    position: absolute;
+    width: 17px;
+    top: 15px;
+    left: 18px;
+    margin: 0;
+    opacity: 0.3;
 }
 
 #footer {
