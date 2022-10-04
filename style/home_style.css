@@ -1,0 +1,132 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+#header {
+    background-color: #ffdddd;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0px;
+}
+
+div.navbar_item {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar_item>a {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    flex-grow: 4;
+}
+
+.navbar_item>a:hover {
+    color: black;
+}
+
+.header_text {
+    margin: 20px;
+}
+
+.header_text>a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar_user {
+    margin-right: 20px;
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+}
+
+.navbar_user>a>img {
+    filter: invert();
+    width: 30px;
+    height: 30px;
+}
+
+.navbar_user>a>img:hover {
+    filter: none;
+    flex-direction: row-reverse;
+}
+
+.container {
+    /* width: 100%;
+    height: 700px; */
+}
+
+.container-bg {
+    /* position: absolute; */
+    background-image: url("../../img/maxresdefault.jpg");
+    background-size: 100% auto;
+    background-position: center center;
+    opacity: 0.5;
+    width: 100%;
+    height: 700px;
+}
+
+.container-child {
+    position: relative;
+    padding: 0 3rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-child-title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* .container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+
+}
+
+.container::before {
+    position: absolute;
+    background-image: url("../../img/maxresdefault.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    content: "";
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.container h2 {
+    position: relative;
+    text-align: center;
+    color: black;
+} */
+
+
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: #ffa4a4;
+}
