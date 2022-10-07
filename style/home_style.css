@@ -1,5 +1,5 @@
 html {
-    font-size: 1.7vh;
+    font-size: 1.0vw;
 }
 
 * {
@@ -115,7 +115,7 @@ div.navbar_item {
 
 .container-child-title {
     position: relative;
-    top: 30vh;
+    top: 15vw;
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 5rem;
@@ -124,7 +124,7 @@ div.navbar_item {
 
 .container-child-description {
     position: relative;
-    top: 35vh;
+    top: 17vw;
     text-align: center;
     font-size: 2rem;
     /* font-weight: bold; */
@@ -132,9 +132,9 @@ div.navbar_item {
 
 .container-child-search-box {
     position: relative;
-    top: 40vh;
-    width: 450px;
-    height: 40px;
+    top: 20vw;
+    width: 40vw;
+    height: 3.5vw;
     margin: 10px auto;
 }
 
@@ -143,7 +143,11 @@ div.navbar_item {
     border-radius: 50px;
     width: 100%;
     height: 120%;
-    padding-left: 45px;
+    padding-left: 4vw;
+}
+
+.container-child-search-box input::placeholder {
+    font-size: 1.2vw;
 }
 
 .container-child-search-box input:focus {
@@ -162,9 +166,9 @@ div.navbar_item {
 
 .container-child-search-box img {
     position: absolute;
-    width: 17px;
-    top: 15px;
-    left: 18px;
+    width: 1.3vw;
+    top: 1.4vw;
+    left: 1.5vw;
     margin: 0;
     opacity: 0.3;
 }
