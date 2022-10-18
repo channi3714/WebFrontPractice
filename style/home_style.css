@@ -156,8 +156,8 @@ a {
 
     .navbar_user {
         position: absolute;
-        top: 45vw;
-        right: 60px;
+        top: 3vw;
+        left: 32px;
         display: none;
         justify-content: center;
         /* width: 100%; */
@@ -166,6 +166,7 @@ a {
     .navbar_user a img {
         width: 25px;
         height: auto;
+        filter: none;
     }
 
     .navbar_toggleBtn {
