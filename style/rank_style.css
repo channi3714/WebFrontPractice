@@ -30,8 +30,8 @@ a {
     letter-spacing: 1px;
 
     position: absolute;
-    left: 50px;
-    top: 70px;
+    left: 12vh;
+    top: 16vh;
 }
 
 .wrap h1 span {
@@ -65,8 +65,8 @@ a {
 }
 
 .swiper-wrapper .swiper-slide {
-    width: 300px;
-    height: 300px;
+    width: 40vh;
+    height: 40vh;
     position: relative;
     top: 50%;
     margin-top: -150px;
@@ -76,10 +76,51 @@ a {
     width: 100%;
     height: 100%;
     background: #fff;
-    padding: 30px;
+    padding: 2.5vh;
     box-sizing: border-box;
     opacity: 0.4;
     transition: 1s;
+}
+
+.swiper-wrapper .swiper-slide .inner .con {
+    position: relative;
+    z-index: 10;
+}
+
+.swiper-wrapper .swiper-slide .inner .con img {
+    width: 100%;
+}
+
+.swiper-wrapper .swiper-slide .inner .con h2 {
+    font-weight: normal;
+    font-size: 2.5vh;
+    font-family: 'Raleway', sans-serif;
+    color: #111;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.swiper-wrapper .swiper-slide .inner .con h2::after {
+    content: "";
+    display: block;
+    width: 3vh;
+    height: 1px;
+    background: #888;
+    margin-top: 10px;
+    transition: 1s 0.5s;
+}
+
+.swiper-wrapper .swiper-slide-active .inner .con h2::after {
+    width: 10vh;
+}
+
+.swiper-wrapper .swiper-slide .inner .con p {
+    font-weight: normal;
+    font-size: 1.5vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.3;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
 }
 
 .wrap .swiper-wrapper .swiper-slide-active .inner {
@@ -149,9 +190,9 @@ a {
 
 .wrap .swiper-pagination-fraction {
     bottom: auto;
-    top: 50px;
+    top: 15vh;
     left: auto;
-    right: 50px;
+    right: 8vh;
     width: auto;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;

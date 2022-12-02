@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PersonalMarket</title>
+    <link rel="stylesheet" href="../style/home_style.css">
     <link rel="stylesheet" href="../style/rank_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -13,11 +14,37 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="./home.html">
+            <div class="navbar_logo">
+                <img src="../img/Group 12.png" alt="">
+                <h1 class="navbar_text">Personal Market</h1>
+            </div>
+        </a>
+        <ul class="navbar_menu">
+            <li><a href="#">Categories</a></li>
+            <li><a href="./rank.html">Ranking</a></li>
+            <li><a href="#">Following</a></li>
+            <li><a id="LookBook" href="#">Best Look</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Closer</a></li>
+        </ul>
+        <div class="navbar_user">
+            <a href="#">
+                <img src="../img/user.png" width="30" height="30">
+            </a>
+        </div>
+        <a href="#" class="navbar_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    </div>
     <div class="wrap">
-        <h1>UI/UX <span>PORTFOLIO</span></h1>
+        <h1>Top 5 <span>ranking</span></h1>
         <ul class="auto">
             <li class="btnStart">
                 <i class="fas fa-play"></i>
@@ -28,19 +55,49 @@
         </ul>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="inner"></div>
+                <div class="inner">
+                    <div class="con">
+                        <img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <div class="inner"></div>
+                <div class="inner">
+                    <div class="con">
+                        <img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <div class="inner"></div>
+                <div class="inner">
+                    <div class="con">
+                        <img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <div class="inner"></div>
+                <div class="inner">
+                    <div class="con">
+                        <img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <div class="inner"></div>
+                <div class="inner">
+                    <div class="con">
+                        <img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -69,9 +126,9 @@
             // direction: "vertical"
             effect: "coverflow",
             coverflowEffect: {
-                rotate: 50,
-                stretch: -100,
-                depth: -400,
+                rotate: 40,
+                stretch: -10,
+                depth: -10,
                 modifier: 1,
                 slideShadows: false
             }
