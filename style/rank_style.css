@@ -67,7 +67,7 @@ a {
 
 .swiper-wrapper .swiper-slide {
     width: 40vh;
-    height: 40vh;
+    height: 50vh;
     position: relative;
     top: 50%;
     margin-top: -150px;
