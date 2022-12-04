@@ -19,7 +19,8 @@ a {
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    background: linear-gradient(45deg, #ac8bef, #2ddbdc);
+    background: linear-gradient(45deg, #f7f3ff, #2d3131);
+    /* background: linear-gradient(45deg, #ac8bef, #2ddbdc); */
 }
 
 .wrap h1 {
