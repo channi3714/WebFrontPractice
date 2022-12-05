@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PersonalMarket</title>
+    <link rel="icon" href="../img/Group 12.png">
     <link rel="stylesheet" href="../style/home_style.css">
     <link rel="stylesheet" href="../style/rank_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
@@ -47,11 +48,11 @@
     <div class="wrap">
         <h1>Top 5 <span>ranking</span></h1>
         <ul class="auto">
-            <li class="btnStart">
-                <i class="fas fa-play"></i>
+            <li class="btnStart" onclick=playSlide(1)>
+                <a id="play" class="fas fa-play"></a>
             </li>
-            <li class="btnStop">
-                <i class="fas fa-pause"></i>
+            <li class="btnStop" onclick=playSlide(0)>
+                <a id="stop" class="fas fa-pause"></a>
             </li>
         </ul>
         <div class="swiper-wrapper">
@@ -108,33 +109,6 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- <script>
-        var swiper = new Swiper(".wrap", {
-            pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            slidesPerView: "auto",
-            spaceBetween: 50,
-            loop: true,
-            centeredSlides: true,
-            speed: 1000,
-            direction: "horizontal",
-            // direction: "vertical"
-            effect: "coverflow",
-            coverflowEffect: {
-                rotate: 40,
-                stretch: -10,
-                depth: -10,
-                modifier: 1,
-                slideShadows: false
-            }
-        });
-    </script> -->
 </body>
 
 </html>

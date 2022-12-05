@@ -40,13 +40,14 @@ a {
 }
 
 .wrap .auto {
+    display: flex;
     position: absolute;
     bottom: 60px;
     left: 60px;
 }
 
-.wrap .auto li {
-    float: left;
+.wrap .auto a {
+    /* float: left; */
     margin-right: 20px;
     cursor: pointer;
     color: #fff;
@@ -55,7 +56,7 @@ a {
     transition: all 0.5s;
 }
 
-.wrap .auto li:hover {
+.wrap .auto a:hover {
     opacity: 1;
     transform: scale(1.4);
 }
