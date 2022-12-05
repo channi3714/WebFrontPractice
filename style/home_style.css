@@ -338,7 +338,7 @@ a {
 
     .container-child-description {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -348,7 +348,7 @@ a {
 
     .container-child-search-box {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 60vw;
@@ -365,7 +365,7 @@ a {
     }
 
     .container-child-search-box input::placeholder {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .container-child-search-box img {
