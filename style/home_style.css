@@ -329,6 +329,7 @@ a {
 
 @media screen and (max-width: 500px) {
     .container-child-title {
+        width: 80%;
         position: absolute;
         top: 30%;
         left: 50%;
