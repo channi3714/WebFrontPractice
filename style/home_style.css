@@ -259,6 +259,7 @@ a {
 }
 
 .container-child-title {
+    width: 100%;
     color: rgb(221, 221, 221) !important;
     position: absolute;
     top: 40%;
@@ -271,10 +272,10 @@ a {
 }
 
 .container-child-description {
-    width: 80%;
+    width: 70%;
     color: rgb(255, 255, 255) !important;
     position: absolute;
-    top: 58%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -284,7 +285,7 @@ a {
 
 .container-child-search-box {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40vw;
@@ -329,7 +330,7 @@ a {
 
 @media screen and (max-width: 500px) {
     .container-child-title {
-        width: 100%;
+        /* width: 100%; */
         position: absolute;
         top: 30%;
         left: 50%;
