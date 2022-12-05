@@ -24,7 +24,7 @@ a {
     /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     padding: 8px 12px;
     width: 100%;
     position: fixed;
