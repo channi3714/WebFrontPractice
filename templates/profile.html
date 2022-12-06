@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="../js/main.js" defer></script>
 </head>
 
@@ -45,7 +47,9 @@
         <div class="profile_inst">
             <div class="pf_img_container">
                 <h3 class="pf_name">Henry's Profile</h3>
-                <div class="profile_img"></div>
+                <div class="profile_img">
+                    <img src="../img/508067573cf56fa1dec501de032ddd2e.jpg">
+                </div>
             </div>
             <div class="profile_desc">
                 <p class="description">
@@ -65,15 +69,81 @@
             <h4 class="product_sort"><i class="fa-solid fa-chevron-down"></i> Date</h4>
         </div>
         <div class="product_contents">
-            <div class="product_img"><img src="../img/508067573cf56fa1dec501de032ddd2e.jpg"></div>
-            <div class="product_img"><img src="../img/fe899ad4af184943987b586e447df2e9.jpg"></div>
-            <div class="product_img"><img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png"></div>
-            <div class="product_img"><img src="../img/3216368681e5f.jpg"></div>
-            <div class="product_img"><img src="../img/fe899ad4af184943987b586e447df2e9.jpg"></div>
-            <div class="product_img"><img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png"></div>
-            <div class="product_img"><img src="../img/508067573cf56fa1dec501de032ddd2e.jpg"></div>
-            <div class="product_img"><img src="../img/3216368681e5f.jpg"></div>
-
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
+                    <img src="../img/2c26f24c3d5b13e0005003c4c324b359 1.png" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/508067573cf56fa1dec501de032ddd2e.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/3216368681e5f.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/7534ec9540c6500691e08d9931b324dc.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/2ecae3d25e49c8bd1881b94976e82018.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/3b3694d4ccaf6dc282ed6636b384b88b.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/a894674bd2c53fc5a7b1b4ad6dff4028.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/fe899ad4af184943987b586e447df2e9.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/2f08a63b3e878a0c8355088d8b2787c7.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/9e3e8655138debd63fda517b7aa71168.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/ce90a45c1030c159a6b8ec745e2541ea.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/f5bccf2f502c536e29772307562b8fc4.jpg" />
+                    <div class="product_short"><span>Title</span><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere, perspiciatis!</div>
+                </div>
+            </div>
+            <script>
+                var msnry = new Masonry('.grid', {
+                    itemSelector: '.grid-item',
+                    // columnWidth: 200
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true,
+                    gutter: 20,
+                });
+                imagesLoaded('.grid').on('progress', function () {
+                    msnry.layout();
+                });
+            </script>
 
 
         </div>
