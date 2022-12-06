@@ -19,15 +19,15 @@ a {
 
 .detail_wrap {
     width: auto;
-    height: 300px;
-    background-color: rgb(255, 207, 207);
+    height: 500px;
+    background-color: rgb(229, 229, 229);
     /* display: flex; */
     overflow: hidden;
 }
 
 .detail_wrap .detail_img {
     position: relative;
-    top: 50%;
+    top: 20%;
     left: 5%;
 }
 
@@ -43,4 +43,34 @@ a {
     padding-bottom: 1vh;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.detail .detail_wrap .detail_img .detail_slide {
+    width: 90%;
+    height: 45vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap
+}
+
+.detail .detail_wrap .detail_img .detail_slide::-webkit-scrollbar {
+    width: 90%;
+    height: 10px;
+}
+
+.detail .detail_wrap .detail_img .detail_slide::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #a6a6a6;
+    /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.detail .detail_wrap .detail_img .detail_slide::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.detail .detail_wrap .detail_img .detail_slide img {
+    /* width: 300px; */
+    height: 100%;
 }
