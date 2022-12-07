@@ -1,3 +1,7 @@
+html {
+    font-size: 1.0vw;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -210,6 +214,18 @@ a {
     .grid-item {
         width: 30%;
     }
+
+    .grid-item .product_short span {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .grid-item .product_short {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 2rem;
+
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -217,5 +233,17 @@ a {
     .grid-sizer,
     .grid-item {
         width: 45%;
+    }
+
+    .grid-item .product_short span {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .grid-item .product_short {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 2rem;
+
     }
 }
